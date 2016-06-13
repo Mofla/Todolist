@@ -1,6 +1,6 @@
 body{
     margin:auto;
-    background: #F3F5D5;
+    background: #F3F5D5 url('IMGS/bg.png');
     width:100%;
     height:100%;
 }
@@ -163,6 +163,10 @@ input[type="submit"], button{
     background:white;
     background-image:linear-gradient(to top, rgba(0,0,0,0.4),rgba(0,0,0,0));
     display:inline-block;
+}
+
+form{
+    text-align: center;
 }
 
 /*  ************* CLASSES GENERIQUES ************** */
