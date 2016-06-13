@@ -81,7 +81,7 @@ body{
     margin: 4px auto;
     border:0;
     height: 2px;
-    background: linear-gradient(to right,rgba(0,0,0,0), rgba(255,255,255,1),rgba(0,0,0,0));
+    background: linear-gradient(to right,rgba(0,0,0,0), rgba(255,35,35,1),rgba(0,0,0,0));
 }
 
 #center{
@@ -153,9 +153,11 @@ button{
 }
 
 form sup{
-    font-size:0.5em;
+    font-size:0.65em;
     font-weight:bold;
     cursor:help;
+    color:red;
+    text-shadow: 0 0 1px black;
 }
 
 input[type="submit"], button{
@@ -167,6 +169,11 @@ input[type="submit"], button{
 
 form{
     text-align: center;
+}
+
+label{
+    font-weight: bold;
+    font-size:0.85em;
 }
 
 /*  ************* CLASSES GENERIQUES ************** */

@@ -77,6 +77,7 @@
         // * Sinon je crée un formulaire d'ajout de tache *
         // ************************************************
         else{
+            $date_du_jour = date('Y-m-d');
     ?>
         <h4 class="titre">Ajouter tâche :</h4><br>
         <form action="ajout-tache.php" method="post" onsubmit="return confirm('Confirmer l\'ajout de la tâche ?')">
@@ -90,7 +91,7 @@
             <br>
             <label name="date_limite">Date limite <sup title="Ex pour le 10 juin 2016: 2016-06-10">?</sup>:</label>
             <br>
-            <input type="date" name="date_limite" required/>
+            <input type="date" name="date_limite" value="<?= $date_du_jour; ?>" required/>
             <br>
             <label name="categorie">Catégorie :</label>
             <select name="categorie">

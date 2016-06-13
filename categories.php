@@ -21,7 +21,7 @@
     </ul>
         <!-- Formulaire d'ajout de categorie -->
 <hr>
-<h3 class="titre">Ajouter une nouvelle catégorie :</h3><br>
+<h3 class="titre">Ajouter une nouvelle catégorie :</h3>
 <form action="ajout-categorie.php" method="post" onsubmit="return confirm('Confirmer l\'ajout de la catégorie ?')">
     <label name="nouvelle_categorie">Nom</label>
     <br>
