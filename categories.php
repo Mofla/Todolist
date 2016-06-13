@@ -9,8 +9,13 @@
 <?php
     $req->execute();
     foreach($req as $categories){
+        $sql2 = 'SELECT Count(ID_TACHE) AS Cnt FROM taches AS T JOIN categories AS C ON T.CATEGORIE = C.ID_CAT WHERE T.CATEGORIE ='.$categories['ID_CAT'].';';
+        $req2 = $db->prepare($sql2);
+        $req2->execute();
+        $res = $req2->fetchObject();
 ?>
-        <li><a href="index.php?cat=<?= $categories['ID_CAT']; ?>" >&#8627; <?= $categories['CATEGORIE']; ?></a>
+        
+        <li><a href="index.php?cat=<?= $categories['ID_CAT']; ?>" >&#8627; <?= $categories['CATEGORIE'].' ('.$res->Cnt.')'; ?></a>
         <form action="supp-categorie.php?id=<?= $categories['ID_CAT']; ?>" method="post" class="form-supp-cat" onsubmit="return confirm('Confirmer la suppression ?')">
             <input type="submit" value="" name="suppression-categorie" class="btn-x" />
         </form>
