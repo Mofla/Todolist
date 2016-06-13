@@ -1,0 +1,220 @@
+body{
+    margin:auto;
+    background: #F3F5D5;
+    width:100%;
+    height:100%;
+}
+/*  ************* HEADER ************** */
+ header{
+     margin:auto;
+     height:150px;
+     background:transparent url('IMGS/logo.png') no-repeat center;
+ }
+
+/*  ************* DIV ************** */
+
+#div-categories, #div-taches{
+    max-width: 30%;
+    height:100%;
+    /* background:rgba(255,255,255,0.3); */
+    background: white;
+    background-image:linear-gradient(to top,rgba(0,0,0,0.1),rgba(255,255,255,1));
+    padding:0 4px;
+    top:0;
+    border:1px solid black
+}
+
+#div-categories{
+    float:left;
+    border-top-right-radius:5%;
+    border-bottom-right-radius:5%;
+    box-shadow: 2px 2px 4px black;
+
+}
+
+#div-categories h4, #div-taches h4{
+    text-align: center;
+}
+
+#div-taches{
+    float:right;
+    padding-left:8px;
+    border-top-left-radius:5%;
+    border-bottom-left-radius:5%;
+    box-shadow: -2px 2px 4px black;
+}
+
+#div-index{
+    margin:auto;
+    max-width: 30%;
+}
+
+#taches{
+    margin: 8px auto;
+    border:1px solid black;
+    background:white;
+    box-shadow: 3px 3px 2px black;
+    text-align:center;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+#taches h3{
+    margin:0;
+    padding:2px 8px;
+    background: #ff592e;
+    color:white;
+    text-shadow:0 0 2px black;
+    border-bottom:1px dotted black;
+}
+
+#taches span{
+
+}
+
+#taches p{
+    border-top:1px dotted black;
+}
+
+#div-categories hr{
+    width:100%;
+    margin: 4px auto;
+    border:0;
+    height: 2px;
+    background: linear-gradient(to right,rgba(0,0,0,0), rgba(255,255,255,1),rgba(0,0,0,0));
+}
+
+#center{
+    margin:auto;
+    text-align: center;
+}
+/*  ************* TACHES ************** */
+.publiee-le, .categorie-tache{
+    padding:2px 1px;
+    font-size: 0.65em;
+}
+
+.publiee-le{
+    float:left;
+}
+
+.categorie-tache{
+    float:right;
+}
+
+.a-finir-le b, .prio b{
+    color:red;
+    text-shadow: 0 0 1px black;
+    font-size:1.2em;
+}
+
+.categorie-tache a{
+    text-decoration:none;
+    color: #ff4e33;
+    text-shadow: 0 0 1px black;
+}
+
+.gris{
+    background:rgba(30,30,30,0.15);
+    width:100%;
+}
+
+span[id^="description-"]{
+    display:none;
+}
+
+span[id^="id-"]{
+    cursor:default;
+    color:#222;
+    text-shadow: 0 0 1px black;
+}
+
+.titre{
+    color: #ffa63d;
+    text-shadow: 0 0 0.5px black;
+}
+
+/*  ************* FORM ************** */
+label, input{
+    margin: 2px auto;
+}
+
+input{
+    box-shadow: 2px 2px 4px #000;
+    background:linear-gradient(to top, rgba(255, 255, 255, 0.75), rgba(255,255,255,1));
+    border:1px solid rgba(0,0,0,0.3);
+    border-radius: 5px;
+}
+
+button{
+    box-shadow: 2px 2px 4px #000;
+    border:1px solid rgba(0,0,0,0.3);
+    border-radius: 5px;
+}
+
+form sup{
+    font-size:0.5em;
+    font-weight:bold;
+    cursor:help;
+}
+
+input[type="submit"], button{
+
+    background:white;
+    background-image:linear-gradient(to top, rgba(0,0,0,0.4),rgba(0,0,0,0));
+    display:inline-block;
+}
+
+/*  ************* CLASSES GENERIQUES ************** */
+
+.left{
+    float:left;
+    margin-left:8px;
+}
+
+.right{
+    float:right;
+    margin-right:8px;
+}
+
+.clear{
+    margin: 8px 0;
+}
+
+.prio{
+    border-bottom:1px dotted black;
+    padding:4px 1px;
+}
+
+.margin-btn{
+    margin:12px 12px;
+}
+
+.form-supp-cat{
+    display:inline-block;
+}
+
+input[class="btn-x"]{
+    height:16px;
+    width:16px;
+    background:url('IMGS/del.png') no-repeat center;
+    border-radius: 50px;
+    object-fit: cover;
+}
+
+.blocs{
+    display:inline-block;
+}
+
+/*  ************* LISTES ************** */
+
+#liste-categories{
+   list-style: none;
+}
+
+
+#liste-categories a{
+    text-decoration: none;
+    color: #ff4e33;
+    text-shadow: 0 0 1px black;
+}
