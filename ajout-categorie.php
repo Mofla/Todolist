@@ -22,7 +22,6 @@
         $req = $db->prepare($sql);
         $req->execute();
         $res = $req->fetch();
-        echo $res;
         if($res < 1){
             // si c'est bon, j'ajoute la requête
             $sql = 'INSERT INTO categories (CATEGORIE) VALUES ("'.$categorie.'")';
