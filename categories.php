@@ -5,7 +5,7 @@
 ?>
     <h4 class="titre">Catégories</h4>
     <ul id="liste-categories">
-        <li><a href="index.php">&#8627; Tous les articles</a></li>
+        <li><a href="index.php">&#8627; Toutes les tâches</a></li>
 <?php
     $req->execute();
     foreach($req as $categories){
